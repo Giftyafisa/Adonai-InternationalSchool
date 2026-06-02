@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Academics - Adonai International School</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Hanken+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#ddb7ff",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e1e3e4",
+                        "on-surface": "#191c1d",
+                        "outline": "#7d7483",
+                        "on-tertiary-fixed": "#2d0050",
+                        "on-primary": "#ffffff",
+                        "surface": "#f8f9fa",
+                        "on-tertiary-fixed-variant": "#680eac",
+                        "outline-variant": "#cec3d3",
+                        "surface-container-high": "#e7e8e9",
+                        "primary-fixed": "#f0dbff",
+                        "surface-dim": "#d9dadb",
+                        "on-tertiary-container": "#be79ff",
+                        "primary-fixed-dim": "#ddb7ff",
+                        "tertiary-container": "#4b0081",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#7b41b3",
+                        "secondary-fixed": "#ffe16d",
+                        "on-primary-fixed": "#2c0050",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#6e5c00",
+                        "inverse-surface": "#2e3132",
+                        "secondary": "#705d00",
+                        "surface-container-low": "#f3f4f5",
+                        "tertiary-fixed": "#f1dbff",
+                        "on-surface-variant": "#4c4451",
+                        "on-background": "#191c1d",
+                        "secondary-fixed-dim": "#e9c400",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#4b0082",
+                        "tertiary": "#2e0052",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#544600",
+                        "on-primary-container": "#ba7ef4",
+                        "secondary-container": "#fcd400",
+                        "tertiary-fixed-dim": "#deb7ff",
+                        "on-primary-fixed-variant": "#622599",
+                        "on-secondary-fixed": "#221b00",
+                        "primary": "#2e0052",
+                        "surface-bright": "#f8f9fa",
+                        "inverse-on-surface": "#f0f1f2",
+                        "background": "#f8f9fa",
+                        "surface-container": "#edeeef"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "margin-desktop": "48px",
+                        "container-max": "1280px",
+                        "unit": "4px",
+                        "section-gap": "80px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Manrope"],
+                        "motto-style": ["Hanken Grotesk"],
+                        "headline-md": ["Manrope"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "label-bold": ["Hanken Grotesk"],
+                        "headline-sm": ["Manrope"],
+                        "headline-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "motto-style": ["16px", { "lineHeight": "24px", "fontWeight": "500" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-bold": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-confetti-pattern {
+            background-image: radial-gradient(#fcd400 10%, transparent 10%),
+                              radial-gradient(#fcd400 10%, transparent 10%);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-inverse-surface full-width top-0 sticky border-b border-outline-variant dark:border-outline shadow-sm dark:shadow-none z-50">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-headline-sm text-headline-sm font-bold text-primary dark:text-inverse-primary flex items-center gap-4" href="index.html">
+<img alt="Adonai International School crest" class="h-12 w-12 object-contain rounded-full shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEfqLF-_FjLUNzlaODGzHd6bZVVSkaVkAm9tFzlyh6IIPBqKYSY4OZT017swGswtIJ-5e4i6P5NIj0NTja3Y4o1D_n7E28jXQU9BwyN0IhlfxzM1vUTyvt2Ux8fSaQ2WN9dNTc20kLXOWRhgca2cB82VcajS-HKjNDxcg6lvXEk_tJ9m0ePOcgauBfMyIW6FoE8fYVn83OrRe7XX6sMkfW8tVFCN_xckYmMGvN3MHydAIdyXrbl8zdU-26Kk9rn8VN-wCzBo0k0P4"/>
+<span class="hidden sm:block">Adonai International School</span>
+</a>
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="index.html">Home</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="about.html">About Us</a>
+<a class="text-primary dark:text-inverse-primary border-b-2 border-secondary font-bold pb-1 font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors opacity-80 transition-opacity" href="academics.html">Academics</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="admissions.html">Admissions</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="contact.html">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex relative text-on-surface-variant">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="pl-10 pr-4 py-2 border border-outline-variant rounded-full bg-surface-container-low text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="Search..." type="text"/>
+</div>
+<a href="admissions.html" class="bg-primary text-on-primary font-label-bold text-label-bold py-2 px-6 rounded-lg hover:bg-primary-container transition-colors shadow-sm inline-block text-center">
+                    Apply Now
+                </a>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative pt-16 pb-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low overflow-hidden">
+<div class="absolute inset-0 bg-confetti-pattern pointer-events-none"></div>
+<div class="absolute -top-40 -right-40 w-[600px] h-[600px] bg-secondary-container/20 rounded-full blur-3xl"></div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center relative z-10">
+<div class="space-y-6">
+<div class="inline-block bg-secondary-container text-on-secondary-container font-label-bold text-label-bold py-1 px-4 rounded-full uppercase tracking-wider">
+                        Discipline and Hardwork
+                    </div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary">
+                        Excellence in Every Endeavor
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                        Our academic framework is designed to foster critical thinking, leadership, and a lifelong love for learning, balanced with robust extracurricular programs.
+                    </p>
+<div class="pt-4">
+<button class="bg-secondary text-on-secondary-container font-label-bold text-label-bold py-3 px-8 rounded-lg hover:bg-secondary-fixed-dim transition-colors shadow-sm inline-flex items-center gap-2">
+                            Explore Curriculum <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl relative z-10">
+<img alt="Students in uniform" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVk3Zavz8DMcGurOgHQY39PjnSL0SouEC9A4dq30ETKRtITb-HJK8xAb58zhnNVXpfkyMBkAHJFtuMUTjbhmdcw7yPs7pTmCu6YpBccbWEdjaPITZoR_AfDQmu7V-Vtemn3MMopfQz_5LTWjJM5jzutdm1UwKoc7ZFSbwfVev74UsVZFazYMSZb4nnmcWf5wCy946BXllZo0_dfC0tUq8mow823FBysHp435-7GD7tNFdvQogkMcqJhw1pxyMyGXEGJCPhO721wSQ"/>
+</div>
+<div class="absolute -bottom-8 -left-8 w-48 h-48 bg-primary rounded-full mix-blend-multiply opacity-10 hidden md:block"></div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Curriculum & Departments -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-background">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16 space-y-4">
+<h2 class="font-headline-md text-headline-md text-primary">Academic Departments</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">A comprehensive approach to education across diverse disciplines.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Core Sciences -->
+<div class="col-span-1 md:col-span-2 bg-surface rounded-2xl p-8 border border-outline-variant/30 hover:shadow-[0px_4px_20px_rgba(75,0,130,0.08)] transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+<div class="w-12 h-12 bg-primary-container/10 text-primary rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">science</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Sciences &amp; Mathematics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 max-w-md">Equipping students with analytical skills through advanced practical laboratories and theoretical foundations.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">verified</span>
+<span class="font-body-md text-body-md">Physics, Chemistry, Biology</span>
+</li>
+<li class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">verified</span>
+<span class="font-body-md text-body-md">Advanced Mathematics</span>
+</li>
+</ul>
+</div>
+<!-- Humanities -->
+<div class="col-span-1 bg-surface-container-low rounded-2xl p-8 border border-outline-variant/30 hover:shadow-[0px_4px_20px_rgba(75,0,130,0.08)] transition-shadow">
+<div class="w-12 h-12 bg-secondary-container/20 text-secondary rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Arts &amp; Humanities</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Fostering creativity, historical understanding, and linguistic excellence.</p>
+<a class="text-primary font-label-bold text-label-bold hover:underline inline-flex items-center gap-1" href="#">Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Achievements -->
+<div class="col-span-1 bg-primary text-on-primary rounded-2xl p-8 shadow-lg relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary to-tertiary opacity-90"></div>
+<div class="relative z-10 h-full flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-secondary-fixed mb-2">Decade of Excellence</h3>
+<p class="font-body-md text-body-md text-on-primary/80">Consistent top-tier academic performance in national examinations.</p>
+</div>
+<div class="mt-8 text-4xl font-headline-lg font-extrabold text-secondary-fixed">
+                                98%
+                                <span class="block text-sm font-label-bold text-on-primary/70 mt-1 uppercase tracking-wider">Pass Rate</span>
+</div>
+</div>
+</div>
+<!-- Award Ceremony Image -->
+<div class="col-span-1 md:col-span-2 rounded-2xl overflow-hidden relative group">
+<img alt="Award Ceremony" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaNPYUnH8desTC9CsUr4tGG6O59z-oOJHuP4YS1JBn_cOn0QuaZ5mzO7GSgbOTxzpYNATRNleskFYt_1LqIMHA_QXfZQKq4OCm3Q4AYExByg3WQ9uiCZXiMeEXtukgo_Xqz-GIj36PxM3doxKxaRVf-ex1y_8VxJzzhy31AuDyDQ0WT9k1TOH7V6f7VQT-8-0tc3_W0Lz-mYvq_1EI0qv0CYPqAWR1bA0FJK3rMf2DTSu2TDLbs745rS4_037SuJggR_jYltA4MDM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<div class="inline-block bg-secondary text-on-secondary-container font-label-bold text-label-bold py-1 px-3 rounded text-xs uppercase mb-2">Recognition</div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary">Annual Academic Awards</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Anniversary Ribbon / Motto -->
+<section class="bg-primary py-8 px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+<div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, #ffe16d 0, #ffe16d 2px, transparent 2px, transparent 8px);"></div>
+<div class="max-w-container-max mx-auto text-center relative z-10 flex flex-col md:flex-row items-center justify-center gap-6">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl">workspace_premium</span>
+<h2 class="font-motto-style text-motto-style text-2xl md:text-3xl text-on-primary tracking-widest uppercase">
+                    Discipline and Hardwork
+                </h2>
+<span class="material-symbols-outlined text-secondary-fixed text-4xl hidden md:block">workspace_premium</span>
+</div>
+</section>
+<!-- Extra-Curriculars (Glassmorphism & Asymmetry) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-bright relative">
+<div class="absolute top-40 left-0 w-64 h-64 bg-primary-fixed rounded-full mix-blend-multiply filter blur-3xl opacity-50"></div>
+<div class="max-w-container-max mx-auto">
+<div class="mb-16">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Beyond the Classroom</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">Developing well-rounded individuals through physical discipline, teamwork, and creative expression.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Text Content -->
+<div class="lg:col-span-5 space-y-8 order-2 lg:order-1 relative z-10">
+<div class="bg-surface/60 backdrop-blur-md border border-outline-variant/40 p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+<div class="flex items-start gap-4">
+<div class="mt-1 w-10 h-10 rounded-full bg-secondary-container/30 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary">military_tech</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-lg font-bold text-primary mb-2">Cadet Display</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Instilling discipline, leadership, and precise coordination through rigorous training and public exhibitions.</p>
+</div>
+</div>
+</div>
+<div class="bg-surface/60 backdrop-blur-md border border-outline-variant/40 p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] ml-0 md:ml-8">
+<div class="flex items-start gap-4">
+<div class="mt-1 w-10 h-10 rounded-full bg-primary-container/10 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary">accessibility_new</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-lg font-bold text-primary mb-2">Choreography &amp; Arts</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Encouraging cultural expression and physical grace through synchronized dance and theatrical performances.</p>
+</div>
+</div>
+</div>
+<div class="bg-surface/60 backdrop-blur-md border border-outline-variant/40 p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+<div class="flex items-start gap-4">
+<div class="mt-1 w-10 h-10 rounded-full bg-secondary-container/30 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary">directions_walk</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-lg font-bold text-primary mb-2">Health Walks</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Promoting cardiovascular fitness and community spirit through regular, organized long-distance walking events.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Image Content -->
+<div class="lg:col-span-7 order-1 lg:order-2 relative">
+<div class="absolute -inset-4 bg-gradient-to-tr from-secondary-fixed/20 to-primary-fixed/20 rounded-[2rem] transform rotate-3"></div>
+<img alt="Health Walks and Physical Activities" class="relative z-10 w-full h-[600px] object-cover rounded-2xl shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfpjcxXmcfRvmpHIGtmxffpZlAlzhvFVqUuBGrQ69coQ59q5MsUXzSuFuCsIo6fiRBEMygchmFpiRRFPhjHJ7L-1roIFl8Zft5AD7NH3WeOFjvT89sLTLiDGEBrJyHFNZr0fWCCr-mjFUqRvHzRGpzSdmt8VimFYN7SUN1UYwU2-jM4xjMSXOmthdaZu2bNlVhDESYcR3qJjFGUhRmObm-8otdZrg1AyALtaUB07nx_TvI-8ynvQO7S7Z_cLg8qsquz-bJMwfpnzI"/>
+<!-- Floating Badge -->
+<div class="absolute -bottom-6 -left-6 bg-surface text-on-surface px-6 py-4 rounded-xl shadow-lg border border-outline-variant/20 z-20 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">local_fire_department</span>
+<div>
+<div class="font-label-bold text-label-bold text-primary">Active Lifestyle</div>
+<div class="font-body-md text-xs text-on-surface-variant">Weekly physical programs</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-tertiary full-width bottom-0 bg-primary dark:bg-tertiary flat no shadows mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1 flex flex-col items-start space-y-4">
+<div class="font-headline-sm text-headline-sm font-extrabold text-secondary-fixed">
+                    Adonai International School
+                </div>
+<p class="text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant font-body-md text-sm mt-4">
+                    © 2024 Adonai International School. All Rights Reserved.
+                </p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap justify-end gap-x-8 gap-y-4 items-center h-full">
+<a class="text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant font-body-md text-body-md hover:text-secondary-container transition-colors" href="#">Home</a>
+<a class="text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant font-body-md text-body-md hover:text-secondary-container transition-colors" href="#">About Us</a>
+<a class="text-secondary-fixed font-bold font-body-md text-body-md hover:text-secondary-container transition-colors underline" href="#">Academics</a>
+<a class="text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant font-body-md text-body-md hover:text-secondary-container transition-colors" href="#">Admissions</a>
+<a class="text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant font-body-md text-body-md hover:text-secondary-container transition-colors" href="#">News/Events</a>
+</div>
+</div>
+</footer>
+</body></html>

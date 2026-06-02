@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Staff - Adonai International School</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700&amp;family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#fcd400",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#2d0050",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface": "#f8f9fa",
+                        "primary": "#2e0052",
+                        "tertiary": "#2e0052",
+                        "surface-container-low": "#f3f4f5",
+                        "on-primary-fixed": "#2c0050",
+                        "tertiary-fixed-dim": "#deb7ff",
+                        "outline-variant": "#cec3d3",
+                        "primary-container": "#4b0082",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "surface-dim": "#d9dadb",
+                        "surface-bright": "#f8f9fa",
+                        "inverse-surface": "#2e3132",
+                        "secondary": "#705d00",
+                        "primary-fixed-dim": "#ddb7ff",
+                        "on-secondary-fixed": "#221b00",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#e9c400",
+                        "on-tertiary-fixed-variant": "#680eac",
+                        "on-primary-fixed-variant": "#622599",
+                        "surface-container-high": "#e7e8e9",
+                        "background": "#f8f9fa",
+                        "on-surface-variant": "#4c4451",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#ddb7ff",
+                        "on-primary-container": "#ba7ef4",
+                        "on-secondary-fixed-variant": "#544600",
+                        "on-surface": "#191c1d",
+                        "primary-fixed": "#f0dbff",
+                        "on-tertiary-container": "#be79ff",
+                        "tertiary-container": "#4b0081",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#edeeef",
+                        "on-primary": "#ffffff",
+                        "on-background": "#191c1d",
+                        "secondary-fixed": "#ffe16d",
+                        "on-secondary-container": "#6e5c00",
+                        "tertiary-fixed": "#f1dbff",
+                        "surface-tint": "#7b41b3",
+                        "outline": "#7d7483"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "48px",
+                        "margin-mobile": "16px",
+                        "container-max": "1280px",
+                        "section-gap": "80px",
+                        "gutter": "24px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Manrope"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "motto-style": ["Hanken Grotesk"],
+                        "label-bold": ["Hanken Grotesk"],
+                        "headline-sm": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "headline-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "motto-style": ["16px", { "lineHeight": "24px", "fontWeight": "500" }],
+                        "label-bold": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #2e0052, #4b0082);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .anniversary-badge {
+            background: linear-gradient(135deg, #fcd400, #e9c400);
+            box-shadow: 0 4px 15px rgba(252, 212, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased font-body-md">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-inverse-surface border-b border-outline-variant dark:border-outline shadow-sm dark:shadow-none full-width top-0 sticky z-50">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-headline-sm text-headline-sm font-bold text-primary dark:text-inverse-primary flex items-center gap-4" href="index.html">
+<img alt="Adonai International School crest" class="h-12 w-12 object-contain rounded-full shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEfqLF-_FjLUNzlaODGzHd6bZVVSkaVkAm9tFzlyh6IIPBqKYSY4OZT017swGswtIJ-5e4i6P5NIj0NTja3Y4o1D_n7E28jXQU9BwyN0IhlfxzM1vUTyvt2Ux8fSaQ2WN9dNTc20kLXOWRhgca2cB82VcajS-HKjNDxcg6lvXEk_tJ9m0ePOcgauBfMyIW6FoE8fYVn83OrRe7XX6sMkfW8tVFCN_xckYmMGvN3MHydAIdyXrbl8zdU-26Kk9rn8VN-wCzBo0k0P4"/>
+<span class="hidden sm:block">Adonai International School</span>
+</a>
+<!-- Desktop Nav -->
+<ul class="hidden md:flex gap-6 items-center">
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors font-body-md text-body-md" href="index.html">Home</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors font-body-md text-body-md" href="academics.html">Academics</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors font-body-md text-body-md" href="gallery.html">Gallery</a></li>
+<li><a class="text-primary dark:text-inverse-primary border-b-2 border-secondary font-bold pb-1 font-body-md text-body-md opacity-80 transition-opacity" href="staff.html">Staff</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors font-body-md text-body-md" href="about.html">About</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors font-body-md text-body-md" href="contact.html">Contact</a></li>
+</ul>
+<a href="admissions.html" class="hidden md:block bg-primary text-on-primary rounded-lg px-6 py-2 font-label-bold text-label-bold hover:bg-primary-container transition-colors inline-block text-center">
+                Apply Now
+            </a>
+<!-- Mobile Menu Icon (Visual Only) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-[32px]">menu</span>
+</button>
+</div>
+</nav>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative pt-16 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed mb-6 text-label-bold font-label-bold">
+<span class="material-symbols-outlined text-[18px]">school</span>
+                Our Dedicated Educators
+            </div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary mb-6">Meet the Minds <br/>Shaping the Future</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
+                At Adonai International School, our faculty embodies the spirit of our motto: 
+                <span class="font-motto-style text-motto-style text-primary-container">"Discipline and Hardwork"</span>. 
+                They are the cornerstone of our decade-long legacy of excellence.
+            </p>
+</section>
+<!-- Leadership Highlight - Dr. Emmanuel Mensah -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+<div class="bg-white rounded-xl shadow-[0px_4px_20px_rgba(75,0,130,0.08)] overflow-hidden border border-surface-container-highest">
+<div class="grid md:grid-cols-2 gap-0 items-center">
+<div class="p-8 md:p-12 order-2 md:order-1">
+<div class="anniversary-badge inline-block px-3 py-1 rounded-full text-on-secondary-fixed text-label-bold font-label-bold mb-6">
+                            10 Years of Leadership
+                        </div>
+<h2 class="font-headline-md text-headline-md text-primary mb-2">Dr. Emmanuel Mensah</h2>
+<h3 class="font-body-lg text-body-lg text-secondary-container-dark font-semibold mb-6">Principal</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                            Dr. Mensah has been the guiding force behind Adonai International School since its inception. With a doctorate in Educational Leadership and over two decades of experience, he champions a holistic approach to education, blending academic rigor with character development.
+                        </p>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary text-[24px]">workspace_premium</span>
+<span class="font-body-md text-body-md text-primary-container">Excellence in Education Award 2023</span>
+</div>
+</div>
+<div class="relative h-64 md:h-full min-h-[400px] order-1 md:order-2 bg-surface-container-high">
+<img alt="Dr. Emmanuel Mensah, Principal of Adonai International School, sitting in his office." class="absolute inset-0 w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp3rhfW2EzmFZNbbKGaSjhvbNLT2FQWFG2ut4AgXCYnjLayPxxz-X_EIDeOjvpszVDGmh6l5OLkpla3sgwjOx8Lv_irTYkZwY3mhFuWXTxjxbjYaIbTxnmfhG6Nriw_Bh3xq5Zsa8NgJ4oJWDDkfJHkLoTYu7aEsNthgW1qNVQ1danLg_lGzznEbeVF3EHftTMLWjorGaA10RfsBpGIrDfP62S-LXl88jiFr8IrHMfo3-6BAZFK8CJnd8bi4-bsXK9n6pmOhwJmPY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Academic Departments Grid -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto pb-section-gap">
+<div class="flex items-center justify-between mb-12">
+<h2 class="font-headline-md text-headline-md text-primary">Academic Faculty</h2>
+<div class="hidden md:flex gap-2">
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary font-label-bold text-label-bold">All</button>
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-bold text-label-bold transition-colors">Sciences</button>
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-bold text-label-bold transition-colors">Humanities</button>
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-bold text-label-bold transition-colors">Arts</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-gutter">
+<!-- Staff Card 1 -->
+<div class="bg-white rounded-xl border border-surface-container-highest p-6 shadow-[0px_4px_20px_rgba(75,0,130,0.04)] hover:shadow-[0px_8px_24px_rgba(75,0,130,0.12)] transition-shadow group">
+<div class="w-24 h-24 rounded-full bg-surface-container-high mx-auto mb-4 overflow-hidden border-4 border-surface group-hover:border-primary-fixed transition-colors">
+<img class="w-full h-full object-cover" data-alt="A professional portrait of a female teacher in her late 30s, smiling warmly in a bright, modern classroom setting. She wears professional attire with subtle gold accessories, reflecting the school's brand identity. The lighting is soft and natural, creating an approachable and academic mood. The color palette incorporates neutral tones with hints of purple and gold in the background elements." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN8okCkI6UYDb-4oXcfSTsvNB6bnqC3tc43iCbbmHvHPyl0Kp5cu0yr1jf_SpErVXxqg_Ug4aGwQ-YMiRH8O7zePGDeuPW1etFg84d77oTSHyQPUXFTSP0JBIb1ITrzq8UxVoJ-eePvezhwWlwON1jfHBWTqllGbvfwR2Esb7h94cGyfwuoqLIsQg8aFTZeSOqSMtggDJOms0CUKXwbMny2aaJARY2XPf9OF7ydamOxYr6qGvcANpIRyYWjH96OwlU5IPsqSeNMHw"/>
+</div>
+<div class="text-center">
+<h4 class="font-headline-sm text-headline-sm text-primary text-lg mb-1">Sarah Osei</h4>
+<p class="font-label-bold text-label-bold text-secondary mb-3 uppercase tracking-wider text-xs">Head of Sciences</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-2">Specializing in Advanced Chemistry and Physics with 8 years tenure.</p>
+</div>
+</div>
+<!-- Staff Card 2 -->
+<div class="bg-white rounded-xl border border-surface-container-highest p-6 shadow-[0px_4px_20px_rgba(75,0,130,0.04)] hover:shadow-[0px_8px_24px_rgba(75,0,130,0.12)] transition-shadow group">
+<div class="w-24 h-24 rounded-full bg-surface-container-high mx-auto mb-4 overflow-hidden border-4 border-surface group-hover:border-primary-fixed transition-colors">
+<img class="w-full h-full object-cover" data-alt="A professional portrait of a male teacher in his 40s, looking confident and scholarly in a well-lit library environment. He is dressed in a smart casual suit, aligning with a modern corporate academic aesthetic. The scene is illuminated by clean, white light with subtle shadows, emphasizing a structured and disciplined atmosphere. Deep purple book spines are visible blurred in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTWwq4NbEeI96eLU3Lq4GhhRoJoZSAaZi5eE1C3FyJ3m7QchmclzcMBPVYrPzPdvIZTaGgato_lUESBZ8stYxOF91aAAGX1zrqRtGV1NvSVprH36V0r9ujE6ESfbkWEgqeC-Eh5Dhk5VqTbjAd6-ZriBLgLuufTfpgcm9mg1QkJbG3nP10V7ksR6ZcHny-jTxnQHjq2I65H1pal3k411-lcAazReBkdqVHBtwuwwVjBBmIcDraIhlg6vAjAdr-WREIEgUdGeuimHg"/>
+</div>
+<div class="text-center">
+<h4 class="font-headline-sm text-headline-sm text-primary text-lg mb-1">David Kwame</h4>
+<p class="font-label-bold text-label-bold text-secondary mb-3 uppercase tracking-wider text-xs">Mathematics</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-2">Inspiring critical thinking through Algebra and Calculus.</p>
+</div>
+</div>
+<!-- Staff Card 3 -->
+<div class="bg-white rounded-xl border border-surface-container-highest p-6 shadow-[0px_4px_20px_rgba(75,0,130,0.04)] hover:shadow-[0px_8px_24px_rgba(75,0,130,0.12)] transition-shadow group">
+<div class="w-24 h-24 rounded-full bg-surface-container-high mx-auto mb-4 overflow-hidden border-4 border-surface group-hover:border-primary-fixed transition-colors">
+<img class="w-full h-full object-cover" data-alt="A vibrant professional headshot of a young female arts teacher in a creative studio setting. She exhibits a joyful and celebratory demeanor, wearing a stylish outfit with a royal purple scarf. The lighting is bright and energetic, reflecting a modern and dynamic educational environment. Hints of colorful artwork and gold accents decorate the blurred studio background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2p471iYXSUpa7BTMfXo_oKq63Eis4cKCU92a0Ekl-Dig97H_K3TqHswNat923J2uab51Z8BYQ6DAEngpp9c5gr9KR0GNu2YEcS2V_0KPYypZwAhnc6PXp8YYkXgGgaxxph_mleJpgWI1itfmXweOe_GuAQqpELwDgf0WRn8bFp5TVnVepYowVWoOxMDL5yqFdOjRGFrC-QfCUVdDQuWC264oLA_ZC9zTZfaDeHjTaTGyxRmXEHFhl6sk-mEOn8UzZgcplFsq8mMk"/>
+</div>
+<div class="text-center">
+<h4 class="font-headline-sm text-headline-sm text-primary text-lg mb-1">Grace Appiah</h4>
+<p class="font-label-bold text-label-bold text-secondary mb-3 uppercase tracking-wider text-xs">Fine Arts &amp; Design</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-2">Fostering creativity and visual expression across all grades.</p>
+</div>
+</div>
+<!-- Staff Card 4 -->
+<div class="bg-white rounded-xl border border-surface-container-highest p-6 shadow-[0px_4px_20px_rgba(75,0,130,0.04)] hover:shadow-[0px_8px_24px_rgba(75,0,130,0.12)] transition-shadow group">
+<div class="w-24 h-24 rounded-full bg-surface-container-high mx-auto mb-4 overflow-hidden border-4 border-surface group-hover:border-primary-fixed transition-colors">
+<img class="w-full h-full object-cover" data-alt="A dignified portrait of a male literature teacher in his 50s, standing in a classic classroom with natural sunlight streaming through a window. He projects an aura of established wisdom and academic rigor. The color scheme is dominated by neutral whites and grays, with a subtle golden glow from the sunlight highlighting his features, maintaining a professional and aspirational brand style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBoAP8ZjKwiUefluTYSp8xcEN8zAhOL8eutt3AJN071c0RKn8_-IQoJHvgUHMR1zFoCaZVjLNYttKKb4riXsk_hkH8AgmVY4Dh1XHxLVmSf_ffGNSTkddYwHDw67vh-j3rtD8oDmLXE1XIn1QGcBgxQmVUmRAh-_zc9UVPv-50zq-BIyWtFe8Nm6OcapBxiy_XYwPGldw5MRsfCefNgG7MVQQO944zqiP-jq67sz3Br01spd-DpUN9_cFh5XVtQkflMS0w2GuaHwQ"/>
+</div>
+<div class="text-center">
+<h4 class="font-headline-sm text-headline-sm text-primary text-lg mb-1">Michael Addo</h4>
+<p class="font-label-bold text-label-bold text-secondary mb-3 uppercase tracking-wider text-xs">Literature &amp; English</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-2">Cultivating a deep appreciation for global literature and effective communication.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-tertiary full-width bottom-0">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-2">
+<div class="font-headline-sm text-headline-sm font-extrabold text-secondary-fixed mb-4">
+                    Adonai International School
+                </div>
+<p class="font-body-md text-body-md text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant mb-6 max-w-sm">
+                    Empowering minds through discipline and hard work. Celebrating a decade of academic excellence and community building.
+                </p>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-secondary-fixed mb-4">Quick Links</h4>
+<ul class="flex flex-col gap-3">
+<li><a class="font-body-md text-body-md text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-secondary-container transition-colors" href="#">Home</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-secondary-container transition-colors" href="#">About Us</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-secondary-container transition-colors" href="#">Academics</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-secondary-container transition-colors" href="#">Admissions</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-secondary-container transition-colors" href="#">News/Events</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-secondary-fixed mb-4">Contact</h4>
+<ul class="flex flex-col gap-3 font-body-md text-body-md text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[20px]">location_on</span> Accra, Ghana</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[20px]">mail</span> info@adonai.edu</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[20px]">phone</span> +233 20 123 4567</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-primary-container px-margin-mobile md:px-margin-desktop py-6 text-center">
+<p class="font-body-md text-body-md text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant text-sm">
+                © 2024 Adonai International School. All Rights Reserved.
+            </p>
+</div>
+</footer>
+</body></html>

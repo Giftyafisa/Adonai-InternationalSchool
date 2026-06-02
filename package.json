@@ -1,0 +1,21 @@
+{
+  "name": "adonai-international-school-website",
+  "version": "1.0.0",
+  "description": "Official website for Adonai International School - Celebrating 10 Years of Excellence",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'To serve locally, use a static server like: python -m http.server 8000 or npx serve'",
+    "dev": "echo 'To serve locally, use: npx serve'"
+  },
+  "keywords": [
+    "school",
+    "education",
+    "ghana",
+    "website",
+    "academic"
+  ],
+  "author": "Adonai International School",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
