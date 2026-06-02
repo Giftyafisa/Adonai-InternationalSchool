@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - Adonai International School</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700&amp;family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#fcd400",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#2d0050",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface": "#f8f9fa",
+                        "primary": "#2e0052",
+                        "tertiary": "#2e0052",
+                        "surface-container-low": "#f3f4f5",
+                        "on-primary-fixed": "#2c0050",
+                        "tertiary-fixed-dim": "#deb7ff",
+                        "outline-variant": "#cec3d3",
+                        "primary-container": "#4b0082",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "surface-dim": "#d9dadb",
+                        "surface-bright": "#f8f9fa",
+                        "inverse-surface": "#2e3132",
+                        "secondary": "#705d00",
+                        "primary-fixed-dim": "#ddb7ff",
+                        "on-secondary-fixed": "#221b00",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#e9c400",
+                        "on-tertiary-fixed-variant": "#680eac",
+                        "on-primary-fixed-variant": "#622599",
+                        "surface-container-high": "#e7e8e9",
+                        "background": "#f8f9fa",
+                        "on-surface-variant": "#4c4451",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#ddb7ff",
+                        "on-primary-container": "#ba7ef4",
+                        "on-secondary-fixed-variant": "#544600",
+                        "on-surface": "#191c1d",
+                        "primary-fixed": "#f0dbff",
+                        "on-tertiary-container": "#be79ff",
+                        "tertiary-container": "#4b0081",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#edeeef",
+                        "on-primary": "#ffffff",
+                        "on-background": "#191c1d",
+                        "secondary-fixed": "#ffe16d",
+                        "on-secondary-container": "#6e5c00",
+                        "tertiary-fixed": "#f1dbff",
+                        "surface-tint": "#7b41b3",
+                        "outline": "#7d7483"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "48px",
+                        "margin-mobile": "16px",
+                        "container-max": "1280px",
+                        "section-gap": "80px",
+                        "gutter": "24px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Manrope"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "motto-style": ["Hanken Grotesk"],
+                        "label-bold": ["Hanken Grotesk"],
+                        "headline-sm": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "headline-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "motto-style": ["16px", { "lineHeight": "24px", "fontWeight": "500" }],
+                        "label-bold": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar (Mobile Version - Hidden Links, Hamburger Menu typically, but per instructions we only show the shell structure or rely on desktop classes if active. Since it's mobile, we'll adapt to show the brand and perhaps a menu icon, though JSON dictates specific structure. We will follow JSON for the desktop/tablet and hide links on mobile per 'md:hidden' logic.) -->
+<header class="bg-surface top-0 sticky border-b border-outline-variant shadow-sm z-50">
+<div class="flex justify-between items-center px-margin-mobile py-4 max-w-container-max mx-auto md:px-margin-desktop">
+<div class="font-headline-sm text-headline-sm font-bold text-primary">
+                Adonai International
+            </div>
+<!-- Mobile Menu Toggle (Visible only on mobile) -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<!-- Desktop Navigation (Hidden on mobile) -->
+<nav class="hidden md:flex items-center gap-gutter">
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Academics</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Gallery</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Staff</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">News</a>
+<a class="text-primary border-b-2 border-secondary font-bold pb-1 font-body-md text-body-md opacity-80 transition-opacity" href="#">Contact</a>
+<a class="ml-4 bg-primary text-on-primary px-4 py-2 rounded-lg font-label-bold text-label-bold hover:bg-primary-container transition-colors" href="#">Apply Now</a>
+</nav>
+</div>
+</header>
+<main class="flex-grow flex flex-col px-margin-mobile py-8 gap-8">
+<!-- Header Section -->
+<section class="text-center">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2">Get in Touch</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">We'd love to hear from you. Reach out to us for any inquiries.</p>
+</section>
+<!-- Contact Information Cards -->
+<section class="flex flex-col gap-4">
+<!-- Address Card -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant shadow-sm flex items-start gap-4">
+<div class="bg-primary-container p-3 rounded-full text-on-primary-container flex-shrink-0">
+<span class="material-symbols-outlined" data-icon="location_on" data-weight="fill" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Our Campus</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">123 Education Lane,<br/>Knowledge City, KC 45678</p>
+</div>
+</div>
+<!-- Phone Card -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant shadow-sm flex items-start gap-4">
+<div class="bg-secondary-container p-3 rounded-full text-on-secondary-container flex-shrink-0">
+<span class="material-symbols-outlined" data-icon="call" data-weight="fill" style="font-variation-settings: 'FILL' 1;">call</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Call Us</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">+1 (555) 123-4567</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 text-sm">Mon-Fri, 8am - 5pm</p>
+</div>
+</div>
+<!-- Email Card -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant shadow-sm flex items-start gap-4">
+<div class="bg-primary-container p-3 rounded-full text-on-primary-container flex-shrink-0">
+<span class="material-symbols-outlined" data-icon="mail" data-weight="fill" style="font-variation-settings: 'FILL' 1;">mail</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Email</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">info@adonaischool.edu</p>
+</div>
+</div>
+</section>
+<!-- Contact Form Section -->
+<section class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant shadow-sm mt-4">
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Send a Message</h2>
+<form class="flex flex-col gap-4">
+<div>
+<label class="block font-label-bold text-label-bold text-primary mb-1" for="name">Full Name</label>
+<input class="w-full rounded-lg border-outline-variant bg-surface focus:border-primary focus:ring-primary font-body-md text-body-md text-on-surface p-3" id="name" name="name" placeholder="Jane Doe" type="text"/>
+</div>
+<div>
+<label class="block font-label-bold text-label-bold text-primary mb-1" for="email">Email Address</label>
+<input class="w-full rounded-lg border-outline-variant bg-surface focus:border-primary focus:ring-primary font-body-md text-body-md text-on-surface p-3" id="email" name="email" placeholder="jane@example.com" type="email"/>
+</div>
+<div>
+<label class="block font-label-bold text-label-bold text-primary mb-1" for="subject">Subject</label>
+<select class="w-full rounded-lg border-outline-variant bg-surface focus:border-primary focus:ring-primary font-body-md text-body-md text-on-surface p-3" id="subject" name="subject">
+<option>General Inquiry</option>
+<option>Admissions</option>
+<option>Events</option>
+</select>
+</div>
+<div>
+<label class="block font-label-bold text-label-bold text-primary mb-1" for="message">Message</label>
+<textarea class="w-full rounded-lg border-outline-variant bg-surface focus:border-primary focus:ring-primary font-body-md text-body-md text-on-surface p-3 resize-none" id="message" name="message" placeholder="How can we help you?" rows="4"></textarea>
+</div>
+<button class="mt-4 bg-primary text-on-primary font-label-bold text-label-bold py-3 px-6 rounded-lg hover:bg-primary-container transition-colors w-full flex items-center justify-center gap-2" type="button">
+                    Send Message
+                    <span class="material-symbols-outlined" data-icon="send">send</span>
+</button>
+</form>
+</section>
+<!-- Map Placeholder -->
+<section class="mt-4 rounded-xl overflow-hidden h-64 border border-outline-variant shadow-sm relative bg-surface-container-high flex items-center justify-center">
+<!-- Simulated Map Image for prototype purposes -->
+<img alt="Map showing school location" class="absolute inset-0 w-full h-full object-cover opacity-50" data-alt="A stylized digital map interface highlighting a specific geographic location. The map uses a modern, light-mode color palette with soft whites, pale grays, and subtle gold and deep purple route lines reflecting a corporate educational brand. The location pin is prominent in royal purple, creating a clean, structured, and easily readable navigational aesthetic." data-location="Knowledge City" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy4cVF_9csfOlJFRAFazxZuTAK-LtsI9_jBpLhXevnbkbf9dZ519-P0gSMK5l_Kc_NdpFRgZCmZc0NCyDNhuJ-lNBXLTIW-RS1KpNSjO4W0ImR8ORalVpY44nFYXUIcjYQuAu828AoPp3r-WWre5YwejV_MATSW1JbxEc6j8j0fZ9zdvChRO0DZJF0SkulBmVPu_UK2hOz1ilHKcYXOHdd7uRKILdEx9YtVb66OrQE_E6YVr0HLydEbhyfhyP1XOZG_S959D53fM4"/>
+<div class="z-10 bg-surface-container-lowest/90 p-4 rounded-lg shadow text-center backdrop-blur-sm">
+<span class="material-symbols-outlined text-primary text-4xl mb-2" data-icon="map">map</span>
+<p class="font-label-bold text-label-bold text-primary">View on Google Maps</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-secondary-fixed mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-8 md:py-section-gap max-w-container-max mx-auto">
+<div class="mb-6 md:mb-0">
+<div class="font-headline-sm text-headline-sm font-extrabold text-secondary-fixed mb-4">
+                    Adonai International
+                </div>
+<p class="text-on-primary-fixed-variant font-body-md text-sm mb-4 max-w-xs">
+                    Discipline and Hardwork. Celebrating a decade of academic excellence and community growth.
+                </p>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-label-bold text-label-bold text-secondary-fixed mb-2 uppercase tracking-wider">Quick Links</h4>
+<a class="text-on-primary-fixed-variant hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">Home</a>
+<a class="text-on-primary-fixed-variant hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">About Us</a>
+<a class="text-on-primary-fixed-variant hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">Academics</a>
+<a class="text-on-primary-fixed-variant hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">Admissions</a>
+<a class="text-on-primary-fixed-variant hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">News/Events</a>
+</div>
+<div class="mt-8 md:mt-0 col-span-1 md:col-span-4 border-t border-on-primary-fixed-variant/30 pt-6 text-center md:text-left text-on-primary-fixed-variant text-sm flex flex-col md:flex-row justify-between items-center gap-4">
+<span>© 2024 Adonai International School. All Rights Reserved.</span>
+<div class="flex gap-4">
+<a class="hover:text-secondary-container transition-colors" href="#"><span class="material-symbols-outlined" data-icon="language">language</span></a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

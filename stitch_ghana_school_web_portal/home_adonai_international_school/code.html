@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Adonai International School - 10th Anniversary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700&amp;family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-primary": "#ddb7ff",
+                      "surface-container-highest": "#e1e3e4",
+                      "on-error-container": "#93000a",
+                      "surface-variant": "#e1e3e4",
+                      "on-surface": "#191c1d",
+                      "outline": "#7d7483",
+                      "on-tertiary-fixed": "#2d0050",
+                      "on-primary": "#ffffff",
+                      "surface": "#f8f9fa",
+                      "on-tertiary-fixed-variant": "#680eac",
+                      "outline-variant": "#cec3d3",
+                      "surface-container-high": "#e7e8e9",
+                      "primary-fixed": "#f0dbff",
+                      "surface-dim": "#d9dadb",
+                      "on-tertiary-container": "#be79ff",
+                      "primary-fixed-dim": "#ddb7ff",
+                      "tertiary-container": "#4b0081",
+                      "error-container": "#ffdad6",
+                      "surface-tint": "#7b41b3",
+                      "secondary-fixed": "#ffe16d",
+                      "on-primary-fixed": "#2c0050",
+                      "error": "#ba1a1a",
+                      "on-tertiary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "on-secondary-container": "#6e5c00",
+                      "inverse-surface": "#2e3132",
+                      "secondary": "#705d00",
+                      "surface-container-low": "#f3f4f5",
+                      "tertiary-fixed": "#f1dbff",
+                      "on-surface-variant": "#4c4451",
+                      "on-background": "#191c1d",
+                      "secondary-fixed-dim": "#e9c400",
+                      "on-secondary": "#ffffff",
+                      "primary-container": "#4b0082",
+                      "tertiary": "#2e0052",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-fixed-variant": "#544600",
+                      "on-primary-container": "#ba7ef4",
+                      "secondary-container": "#fcd400",
+                      "tertiary-fixed-dim": "#deb7ff",
+                      "on-primary-fixed-variant": "#622599",
+                      "on-secondary-fixed": "#221b00",
+                      "primary": "#2e0052",
+                      "surface-bright": "#f8f9fa",
+                      "inverse-on-surface": "#f0f1f2",
+                      "background": "#f8f9fa",
+                      "surface-container": "#edeeef"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "margin-desktop": "48px",
+                      "container-max": "1280px",
+                      "unit": "4px",
+                      "section-gap": "80px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "body-md": ["Manrope"],
+                      "motto-style": ["Hanken Grotesk"],
+                      "headline-md": ["Manrope"],
+                      "headline-lg-mobile": ["Manrope"],
+                      "body-lg": ["Manrope"],
+                      "label-bold": ["Hanken Grotesk"],
+                      "headline-sm": ["Manrope"],
+                      "headline-lg": ["Manrope"]
+              },
+              "fontSize": {
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "motto-style": ["16px", {"lineHeight": "24px", "fontWeight": "500"}],
+                      "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "800"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "label-bold": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                      "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+              }
+            }
+          }
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1;
+        }
+      </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+<!-- TopNavBar from JSON -->
+<header class="bg-surface dark:bg-inverse-surface w-full top-0 sticky z-50 border-b border-outline-variant dark:border-outline shadow-sm dark:shadow-none transition-opacity duration-300">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<img alt="Adonai International School Logo" class="h-12 w-12 object-contain rounded-full shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEfqLF-_FjLUNzlaODGzHd6bZVVSkaVkAm9tFzlyh6IIPBqKYSY4OZT017swGswtIJ-5e4i6P5NIj0NTja3Y4o1D_n7E28jXQU9BwyN0IhlfxzM1vUTyvt2Ux8fSaQ2WN9dNTc20kLXOWRhgca2cB82VcajS-HKjNDxcg6lvXEk_tJ9m0ePOcgauBfMyIW6FoE8fYVn83OrRe7XX6sMkfW8tVFCN_xckYmMGvN3MHydAIdyXrbl8zdU-26Kk9rn8VN-wCzBo0k0P4"/>
+<span class="font-headline-sm text-headline-sm font-bold text-primary dark:text-inverse-primary hidden sm:block">Adonai International</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary dark:text-inverse-primary border-b-2 border-secondary font-bold pb-1 font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors opacity-80" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">About Us</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Academics</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">Admissions</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors" href="#">News/Events</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary rounded-lg px-6 py-2 font-label-bold text-label-bold hover:bg-primary-container transition-colors shadow-md">Apply Now</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative bg-surface-container-lowest overflow-hidden pt-12 pb-24 lg:pt-24 lg:pb-32">
+<div class="absolute inset-0 bg-gradient-to-br from-primary-fixed/30 to-transparent pointer-events-none"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 bg-secondary-fixed px-4 py-2 rounded-full shadow-sm">
+<span class="material-symbols-outlined filled text-secondary" data-icon="stars" data-weight="fill">stars</span>
+<span class="font-label-bold text-label-bold text-on-secondary-fixed">10th Anniversary Celebration</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary">
+                            A Decade of Excellence:<br/>
+<span class="text-secondary-container bg-primary px-2 rounded-md inline-block mt-2 shadow-lg transform -rotate-1">Discipline and Hardwork</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                            Join us in celebrating ten years of academic brilliance, community building, and unwavering commitment to nurturing the leaders of tomorrow at Adonai International School.
+                        </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary text-on-primary rounded-lg px-8 py-3 font-label-bold text-label-bold hover:bg-tertiary transition-all shadow-[0_4px_20px_rgba(75,0,130,0.2)] hover:shadow-[0_6px_25px_rgba(75,0,130,0.3)] hover:-translate-y-0.5">Explore Programs</button>
+<button class="bg-secondary text-on-secondary rounded-lg px-8 py-3 font-label-bold text-label-bold hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-all shadow-sm border border-secondary">Anniversary Events</button>
+</div>
+</div>
+<div class="relative">
+<!-- Bento Grid style hero images -->
+<div class="grid grid-cols-2 gap-4 relative">
+<div class="space-y-4">
+<div class="rounded-xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.12)] aspect-square transform translate-y-8 hover:scale-105 transition-transform duration-500 relative group">
+<img alt="High energy photo of Adonai students celebrating" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcWaL5Vy_MKs2gXVN8kv-TM14PJvEJYdjEuhs-IAdNglviWxSmxf-ZwhpAZf7b_r62phPYZTAqWikpZyM7lblbgkA6pGlW3cmDd-2Sn4129tBRx5u1bygIaMtU7g8NjknS9-t7_VVl_SyK3_tO85ZE2hXW2a9GKPE2EKTIrUASV3ejt_Og9NGW1GR2n9mZYdmPEJzNHYpKCL427avz746s5VzIM4UxUaCIH_BUrJlIPZxq7Y4jrsPgTWTr6gcRDLrUxcI7Xe0JIeM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+<span class="font-label-bold text-label-bold text-on-primary">Joyful Learning</span>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<div class="rounded-xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.12)] aspect-square bg-surface-container flex items-center justify-center p-6 border border-outline-variant hover:border-secondary transition-colors duration-300">
+<img alt="Adonai 10th Anniversary Logo" class="w-full h-full object-contain drop-shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYGRMkvL-KgvOyoZFfc1znlsHVplVGKJFICsn71-a-FMYm5MqbXhJBXZPCaBcyn97DQxUOs6l4UkgQgJDwl9O7PyurG-fXcQk9pOa8sGuYlW6XoPxApeHWEOkkQUHBcAgWlpA8sZYmEovBRkUz-ElxpPICec6eab8msQrJ1isWtJ5RxMY1k8hl7u1KOe79Y-cixbYyUAzazi440QSQSZMJs7fTupOVSIDTcwNm1j84dkzdAMVBP04Jo52usMRqQNYrR8tX1riKKjU"/>
+</div>
+</div>
+</div>
+<!-- Floating decorative elements -->
+<div class="absolute -top-8 -right-8 w-24 h-24 bg-secondary-fixed/50 rounded-full blur-xl pointer-events-none"></div>
+<div class="absolute -bottom-8 -left-8 w-32 h-32 bg-primary-fixed/50 rounded-full blur-xl pointer-events-none"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Welcome Section -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Welcome to Adonai</h2>
+<div class="w-24 h-1 bg-secondary mx-auto mb-6 rounded-full"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Rooted in our motto "Discipline and Hardwork," we provide a holistic educational environment where every student is empowered to achieve their highest potential.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Feature Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_4px_20px_rgba(75,0,130,0.05)] border border-surface-container-high hover:shadow-[0_8px_30px_rgba(75,0,130,0.1)] transition-all duration-300 group">
+<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-primary-fixed text-3xl transition-colors duration-300" data-icon="school">school</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Academic Rigor</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">A challenging curriculum designed to foster critical thinking and intellectual growth.</p>
+</div>
+<!-- Feature Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_4px_20px_rgba(75,0,130,0.05)] border border-surface-container-high hover:shadow-[0_8px_30px_rgba(75,0,130,0.1)] transition-all duration-300 group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary-fixed/20 rounded-bl-full -mr-16 -mt-16 transition-transform duration-500 group-hover:scale-150"></div>
+<div class="w-16 h-16 bg-secondary-fixed rounded-full flex items-center justify-center mb-6 group-hover:bg-secondary transition-colors duration-300 relative z-10">
+<span class="material-symbols-outlined text-secondary group-hover:text-secondary-fixed text-3xl transition-colors duration-300" data-icon="group">group</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3 relative z-10">Vibrant Community</h3>
+<p class="font-body-md text-body-md text-on-surface-variant relative z-10">An inclusive campus where lifelong friendships are formed and diversity is celebrated.</p>
+</div>
+<!-- Feature Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_4px_20px_rgba(75,0,130,0.05)] border border-surface-container-high hover:shadow-[0_8px_30px_rgba(75,0,130,0.1)] transition-all duration-300 group">
+<div class="w-16 h-16 bg-tertiary-fixed rounded-full flex items-center justify-center mb-6 group-hover:bg-tertiary transition-colors duration-300">
+<span class="material-symbols-outlined text-tertiary group-hover:text-tertiary-fixed text-3xl transition-colors duration-300" data-icon="emoji_events">emoji_events</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Holistic Development</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Extracurricular programs that build character, leadership, and physical well-being.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Anniversary Schedule Section -->
+<section class="py-section-gap bg-gradient-to-b from-surface-container-lowest to-surface-container-low border-y border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1 relative">
+<div class="rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(75,0,130,0.15)] border-4 border-surface-container-lowest relative z-10">
+<img alt="Adonai 10th Anniversary Event Schedule Flyer" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu2-pDcgDWplyKRrHUUoEfbiyRkp5GjPtEg5JHCrm81KpI1Q1nfpKFPLFtpdskqxWmQI7dPJRBt3OTWsFfT8lWCN-wnC_mvCJjsNdsDLp0fPk7f3jexEiCkFAG3hufGC1xSr6VDyhjsTcbZorYEx16vidwyEX2PbNJIIMVxnWZKViGh3zYaH5jFtA-8GqDioqYn1_otHx4jBNd9eGZLfa31r_fQ4Vf3J9R5NZAkQSeieLel-lbGobk14xdjMg2IHTm3tybU5c_gb0"/>
+</div>
+<!-- Decorative background frame -->
+<div class="absolute -top-4 -left-4 w-full h-full rounded-2xl border-2 border-secondary/40 z-0"></div>
+<div class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-2xl z-0"></div>
+</div>
+<div class="order-1 lg:order-2 space-y-8">
+<div>
+<span class="font-label-bold text-label-bold text-secondary tracking-widest uppercase mb-2 block">Join the Celebration</span>
+<h2 class="font-headline-md text-headline-md text-primary">Our 10th Anniversary Schedule</h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                            Mark your calendars for a series of spectacular events designed to honor our history and look forward to a bright future.
+                        </p>
+<!-- Stylized List -->
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<div class="flex-shrink-0 w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-primary" data-icon="calendar_month">calendar_month</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1" style="font-size: 20px;">Thanksgiving Service</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Kicking off our celebrations in gratitude.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="flex-shrink-0 w-12 h-12 bg-secondary-fixed rounded-full flex items-center justify-center border border-secondary/20">
+<span class="material-symbols-outlined text-secondary" data-icon="sports_handball">sports_handball</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1" style="font-size: 20px;">Sports Gala</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">A day of friendly competition and athletic excellence.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="flex-shrink-0 w-12 h-12 bg-tertiary-fixed rounded-full flex items-center justify-center border border-tertiary/20">
+<span class="material-symbols-outlined text-tertiary" data-icon="celebration">celebration</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1" style="font-size: 20px;">Grand Dinner &amp; Awards</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">The culminating elegant evening honoring our community.</p>
+</div>
+</li>
+</ul>
+<button class="mt-4 bg-transparent border-2 border-primary text-primary rounded-lg px-8 py-3 font-label-bold text-label-bold hover:bg-primary hover:text-on-primary transition-colors flex items-center gap-2">
+<span>Download Full Program</span>
+<span class="material-symbols-outlined text-sm" data-icon="download">download</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Every Child Matters Section -->
+<section class="py-section-gap bg-primary text-on-primary relative overflow-hidden">
+<!-- Background Texture -->
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="flex flex-col lg:flex-row items-center gap-12">
+<div class="lg:w-1/2 space-y-6">
+<div class="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm border border-white/20">
+<span class="material-symbols-outlined text-secondary-fixed" data-icon="favorite" data-weight="fill">favorite</span>
+<span class="font-label-bold text-label-bold text-secondary-fixed">Our Philosophy</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-white">Every Child Matters</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim">
+                            At Adonai International, we recognize the unique brilliance within every student. Our dedicated staff ensures personalized attention, fostering an environment where individualized learning paths lead to collective success.
+                        </p>
+<div class="pt-6 grid grid-cols-2 gap-6 border-t border-white/20 mt-8">
+<div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-secondary-fixed mb-1">15:1</h4>
+<p class="font-body-md text-body-md text-white/80">Student to Teacher Ratio</p>
+</div>
+<div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-secondary-fixed mb-1">100%</h4>
+<p class="font-body-md text-body-md text-white/80">Commitment to Growth</p>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 w-full">
+<div class="rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.3)] aspect-[4/3] border border-white/10 relative group">
+<img alt="Group photo of Adonai staff representing 'Every Child Matters'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcM_sr9sJRgyury46Y57U4OpVo9d7raRmEVZLUMH2lcmXk59oOXzpS8EbGOD8f4nXHXQEuMqYTRdaRSKoM6KHDPPp-XdIkxF6xhZp6UiVOCO-cFdGnlvHBu0G1ZT-Teh1WTZi8fAi_qCok3fzl1y4CHYlLJFvkC0tcvkZAM-oxF2Nyif8qgV-J6gWNT5fjKNeK67ipjxsFoXWe0rUQfu30_Ji23DwDiEhOMSl_2bGm164RpGhjBbbTH5sfreSiVcKpsxLJf_uX1Yg"/>
+<!-- Anniversary Ribbon Overlay -->
+<div class="absolute bottom-0 left-0 w-full bg-tertiary/90 backdrop-blur-md px-6 py-4 border-t-4 border-secondary flex justify-between items-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<span class="font-motto-style text-motto-style text-secondary-fixed tracking-wide">Discipline and Hardwork</span>
+<span class="material-symbols-outlined text-secondary-fixed" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer from JSON -->
+<footer class="bg-primary dark:bg-tertiary w-full bottom-0">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1 space-y-4">
+<span class="font-headline-sm text-headline-sm font-extrabold text-secondary-fixed block mb-4">Adonai International</span>
+<p class="font-body-md text-body-md text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant">
+                    Dedicated to discipline, hardwork, and academic excellence for over a decade.
+                </p>
+</div>
+<div class="col-span-1 md:col-span-2">
+<h4 class="font-label-bold text-label-bold text-secondary-fixed mb-4">Quick Links</h4>
+<ul class="grid grid-cols-2 gap-2">
+<li><a class="font-body-md text-body-md text-secondary-fixed font-bold hover:text-secondary-container transition-colors underline" href="#">Home</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-secondary-container transition-colors" href="#">About Us</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-secondary-container transition-colors" href="#">Academics</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-secondary-container transition-colors" href="#">Admissions</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-secondary-container transition-colors" href="#">News/Events</a></li>
+</ul>
+</div>
+<div class="col-span-1 md:col-span-1">
+<h4 class="font-label-bold text-label-bold text-secondary-fixed mb-4">Contact Us</h4>
+<p class="font-body-md text-body-md text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+                    Main Campus
+                </p>
+<p class="font-body-md text-body-md text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="mail">mail</span>
+                    info@adonaischool.edu
+                </p>
+</div>
+<div class="col-span-1 md:col-span-4 border-t border-primary-container pt-8 mt-8 text-center">
+<p class="font-body-md text-body-md text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant text-sm">
+                    © 2024 Adonai International School. All Rights Reserved.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
