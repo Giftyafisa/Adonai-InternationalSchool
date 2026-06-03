@@ -124,6 +124,7 @@
 <a class="font-body-md text-body-md text-primary border-b-2 border-secondary font-bold pb-1 hover:text-secondary transition-colors opacity-80" href="about.html">About Us</a>
 <a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="academics.html">Academics</a>
 <a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="admissions.html">Admissions</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="gallery.html">Gallery</a>
 <a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="contact.html">Contact</a>
 </nav>
 <div class="hidden md:flex items-center space-x-4">
@@ -134,12 +135,46 @@
                     Apply Now
                 </a>
 </div>
-<!-- Mobile Menu Toggle -->
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined">menu</span>
+<button id="mobile-menu-btn" class="md:hidden text-primary hover:text-secondary transition-colors" aria-label="Toggle navigation menu">
+<span class="material-symbols-outlined text-3xl">menu</span>
 </button>
 </div>
+<!-- Mobile Navigation Panel -->
+<div id="mobile-menu" class="md:hidden fixed inset-0 z-50 bg-surface transform translate-x-full transition-transform duration-300 ease-in-out">
+<div class="flex justify-between items-center px-margin-mobile py-4 border-b border-outline-variant">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">Menu</span>
+<button id="mobile-menu-close" class="text-primary hover:text-secondary transition-colors" aria-label="Close navigation menu">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+</div>
+<nav class="flex flex-col px-margin-mobile py-8 space-y-6">
+<a class="text-on-surface-variant font-body-lg text-body-lg hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-primary font-headline-sm text-headline-sm font-bold border-b border-secondary pb-2" href="about.html">About Us</a>
+<a class="text-on-surface-variant font-body-lg text-body-lg hover:text-primary transition-colors" href="academics.html">Academics</a>
+<a class="text-on-surface-variant font-body-lg text-body-lg hover:text-primary transition-colors" href="admissions.html">Admissions</a>
+<a class="text-on-surface-variant font-body-lg text-body-lg hover:text-primary transition-colors" href="gallery.html">Gallery</a>
+<a class="text-on-surface-variant font-body-lg text-body-lg hover:text-primary transition-colors" href="contact.html">Contact</a>
+<div class="pt-6 border-t border-outline-variant">
+<a href="admissions.html" class="block bg-primary text-on-primary text-center rounded-lg px-6 py-3 font-label-bold text-label-bold hover:bg-primary-container transition-colors shadow-md">Apply Now</a>
+</div>
+</nav>
+</div>
 </header>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+var menuBtn = document.getElementById('mobile-menu-btn');
+var menuClose = document.getElementById('mobile-menu-close');
+var mobileMenu = document.getElementById('mobile-menu');
+if (mobileMenu) {
+function openMenu() { mobileMenu.classList.remove('translate-x-full'); document.body.style.overflow = 'hidden'; }
+function closeMenu() { mobileMenu.classList.add('translate-x-full'); document.body.style.overflow = ''; }
+if (menuBtn) menuBtn.addEventListener('click', openMenu);
+if (menuClose) menuClose.addEventListener('click', closeMenu);
+mobileMenu.querySelectorAll('a').forEach(function(link) { link.addEventListener('click', closeMenu); });
+}
+});
+</script>
 <!-- Hero Section -->
 <section class="relative bg-primary overflow-hidden min-h-[400px] flex items-center justify-center pt-12 pb-20">
 <div class="absolute inset-0 bg-gradient-to-br from-tertiary-container to-primary opacity-90 z-0"></div>
